@@ -1,0 +1,104 @@
+.font-normal {
+    font-weight: $font-normal;
+}
+
+.font-semibold {
+    font-weight: $font-semibold;
+}
+
+.font-bold {
+    font-weight: $font-bold;
+}
+
+.menu-font-size {
+    font-size: $menu-font-size;
+}
+
+.h1-font-size {
+    font-size: $h1-font-size;
+}
+
+.main-button-font-size {
+    font-size: $main-button-font-size;
+}
+
+.title-font-size {
+    font-size: $title-font-size;
+}
+
+.subtitle-font-size {
+    font-size: $subtitle-font-size;
+}
+
+.content-font-size {
+    font-size: $content-font-size;
+}
+
+.subcontent-font-size {
+    font-size: $subcontent-font-size;
+}
+
+.form-font-size {
+    font-size: $form-font-size;
+}
+
+.fg-white {
+    color: white;
+}
+
+.fg-gray {
+    color: gray;
+}
+
+.fg-blue {
+    color: blue;
+}
+
+.fg-orange {
+    color: orange;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.f-left {
+    float: left;
+}
+
+.tt-u {
+    text-transform: uppercase;
+}
+
+.td-n {
+    text-decoration: none;
+}
+
+.lst-none {
+    list-style: none;
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+

@@ -1,0 +1,37 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,800italic,700italic);
+
+
+$base-font-family: 'Open Sans', sans-serif;
+
+$font-normal: 400;
+$font-semibold: 600;
+$font-bold: 700;
+
+$menu-font-size: 12pt;
+
+$h1-font-size: 28pt;
+$main-button-font-size: 16pt;
+
+$title-font-size: 22pt;
+$subtitle-font-size: 14pt;
+$content-font-size: 14pt;
+$subcontent-font-size: 12pt;
+$form-font-size: 12pt;
+
+$base-white: #ffffff;
+$base-gray: #282828;
+$base-blue: #2f3e9f;
+$base-orange: #ebaa56;
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout"
+;
