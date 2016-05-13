@@ -9,7 +9,7 @@
 title: Diosa
 email: diosa@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Uma plataforma de divulgação de mão de obra feminina na área de manutenção geral de residências.
+  Uma plataforma de divulgação de mão de obra feminina na área de manutenção geral de residências
 register_button: >
   Cadastre-se para se manter informado
 we_do: >
@@ -17,13 +17,13 @@ we_do: >
 description_we_do: >
   Nós divulgamos a mão de obra feminina ligada à manutenção geral de residências, possibilitando mais visibilidade para as mulheres que já trabalham na área e para aquelas que estão buscando inserção nesse mercado
 spread: >
-  a mão de obra feminina relacionada à manutenção geral de residências.
+  Mão de obra feminina relacionada à manutenção geral de residências.
 potencialize: >
-  o interesse de outras mulheres em fazer parte desse mercado.
+  Interesse de outras mulheres em fazer parte desse mercado.
 helps: >
-  a qualificação e também a inserção delas no mercado de trabalho.
+  Qualificação e também a inserção delas no mercado de trabalho.
 encourage: >
-  mulheres a trabalhar em uma área incomum para elas.
+  Mulheres a trabalhar em uma área incomum para elas.
 we_are: >
   Quem somos
 description_we_are: >
@@ -36,7 +36,7 @@ be_partner: >
 contact: >
   Contato
 description_contact: >
-  Tem interesse em saber mais sobre a Diosa, contratar o serviço ou ser uma prestadora? Entra em contato com a gente. Ficaremos felizes com o seu contato.
+  Tem interesse em saber mais sobre a Diosa, contratar o serviço ou ser uma prestadora? Entra em contato com a gente. Ficaremos felizes com o seu contato
 baseurl: "/diosa" # the subpath of your site, e.g. /blog
 url: "http://diosa.me" # the base hostname & protocol for your site
 
