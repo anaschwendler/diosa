@@ -43,35 +43,43 @@
 }
 
 .fg-white {
-    color: white;
+    color: $base-white;
 }
 
 .fg-gray {
-    color: gray;
+    color: $base-gray;
+}
+
+.fg-light-gray {
+    color: $base-light-gray;
 }
 
 .fg-blue {
-    color: blue;
+    color: $base-blue;
 }
 
 .fg-orange {
-    color: orange;
+    color: $base-orange;
 }
 
 .bg-white {
-    background-color: white;
+    background-color: $base-white;
 }
 
 .bg-gray {
-    background-color: gray;
+    background-color: $base-gray;
+}
+
+.bg-light-gray {
+    background-color: $base-light-gray;
 }
 
 .bg-blue {
-    background-color: blue;
+    background-color: $base-blue;
 }
 
 .bg-orange {
-    background-color: orange;
+    background-color: $base-orange;
 }
 
 .f-left {

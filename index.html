@@ -2,47 +2,76 @@
 layout: default
 ---
 
-<section class="we-do bg-white">
-    <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.we_do }}</h2>
-    <p class="font-normal content-font-size fg-gray">{{ site.description_we_do }}</p>
-
-    <div class="pilares">
-            <div class="spread">
-                    <h3 class="font-bold subtitle-font-size fg-blue tt-u">divulga</h3>
+<section class="we-do bg-white ta-c">
+    <div class="container-section">
+        <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.we_do }}</h2>
+        <p class="font-normal content-font-size fg-gray">{{ site.description_we_do }}</p>
+        <div class="row pilares">
+                <div class="col-xs-3 spread">
+                    <div class="pilar-circle">
+                        <img alt="Divulga" class="pilar-img" src="{{ site.baseurl }}/img/spread.png">
+                    </div>
+                    <div class="border-subtitle">
+                        <h3 class="font-bold subtitle-font-size fg-blue tt-u">divulga</h3>
+                    </div>
                     <p class="font-normal subcontent-font-size fg-gray">{{ site.spread }}</p>
-            </div>
-            <div class="potencialize">
-                    <h3 class="font-bold subtitle-font-size fg-blue tt-u">potencializa</h3>
-                    <p class="font-normal subcontent-font-size fg-gray">{{ site.potencialize }}.</p>
-            </div>
-            <div class="helps">
-                    <h3 class="font-bold subtitle-font-size fg-blue tt-u">auxilia</h3>
+                </div>
+                <div class="col-xs-3 potencialize">
+                    <div class="pilar-circle">
+                        <img alt="Potencializa" class="pilar-img" src="{{ site.baseurl }}/img/potencialize.png">
+                    </div>
+                    <div class="border-subtitle pot">
+                        <h3 class="font-bold subtitle-font-size fg-blue tt-u">potencializa</h3>
+                    </div>
+                    <p class="font-normal subcontent-font-size fg-gray">{{ site.potencialize }}</p>
+                </div>
+                <div class="col-xs-3 helps">
+                <div class="pilar-circle">
+                        <img alt="Auxilia" class="pilar-img helps" src="{{ site.baseurl }}/img/helps.png">
+                    </div>
+                    <div class="border-subtitle">
+                        <h3 class="font-bold subtitle-font-size fg-blue tt-u">auxilia</h3>
+                    </div>
                     <p class="font-normal subcontent-font-size fg-gray">{{ site.helps }}</p>
-            </div>
-            <div class="encourage">
-                    <h3 class="font-bold subtitle-font-size fg-blue tt-u">incentiva</h3>
+                </div>
+                <div class="col-xs-3 encourage">
+                    <div class="pilar-circle">
+                        <img alt="Incentiva" class="pilar-img" src="{{ site.baseurl }}/img/encourage.png">
+                    </div>
+                    <div class="border-subtitle">
+                        <h3 class="font-bold subtitle-font-size fg-blue tt-u">incentiva</h3>
+                    </div>
                     <p class="font-normal subcontent-font-size fg-gray">{{ site.encourage }}</p>
-            </div>
+                </div>
+        </div>
     </div>
 </section>
 
-<section class="we-are bg-orange">
-    <h2 class="font-bold title-font-size fg-white tt-u">{{ site.we_are }}</h2>
-    <p class="font-normal content-font-size fg-white">A Diosa é formada por 4 mulheres que acreditam no <span class="font-bold">empreendedorismo social</span>, na necessidade de <span class="font-bold">discussão sobre estereótipos de gênero</span> e no <span class="font-bold">empoderamento feminino</span> para mudança social.</p>
-   <p class="font-normal content-font-size fg-white">Por isso, investimos na divulgação da mão de obra feminina em uma área pouco comum para elas, mas que existe uma grande demanda de clientes a ser atendida.</p>
+<section class="we-are bg-orange ta-c">
+    <div class="container-section">
+        <h2 class="font-bold title-font-size fg-white tt-u">{{ site.we_are }}</h2>
+        <p class="font-normal content-font-size fg-white">A Diosa é formada por 4 mulheres que acreditam no <span class="font-bold">empreendedorismo social</span>, na necessidade de <span class="font-bold">discussão sobre estereótipos de gênero</span> e no <span class="font-bold">empoderamento feminino</span> para mudança social.</p>
+        <p class="font-normal content-font-size fg-white">Por isso, investimos na divulgação da mão de obra feminina em uma área pouco comum para elas, mas que existe uma grande demanda de clientes a ser atendida.</p>
+    </div>
 </section>
 
-<section class="partners bg-gray">
+<section class="partners bg-light-gray ta-c">
     <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.partners }}</h2>
 </section>
 
-<section class="be-partner bg-blue">
-    <button class="fg-white">{{ site.be_partner }}</button>
+<section class="be-partner bg-blue ta-c">
+    <div class="ta-c">
+        <button type="button" class="btn btn-default font-semibold main-button-font-size">
+            {{ site.be_partner }}
+        </button>
+    </div>
 </section>
 
-<section class="contact bg-white">
-    <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.contact }}</h2>
-    <p class="font-normal content-font-size fg-gray">{{ site.description_contact }}</p>
+<section class="contact bg-white ta-c">
+    <div class="container-section">
+        <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.contact }}</h2>
+        <p class="font-normal content-font-size fg-gray">{{ site.description_contact }}</p>
+    </div>
 </section>
 
 <!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
