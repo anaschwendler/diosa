@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,800italic,700italic);
+.font-normal {
+  font-weight: 400; }
+
+.font-semibold {
+  font-weight: 600; }
+
+.font-bold {
+  font-weight: 700; }
+
+.menu-font-size {
+  font-size: 12px; }
+
+.h1-font-size {
+  font-size: 28px; }
+
+.main-button-font-size {
+  font-size: 16px; }
+
+.title-font-size {
+  font-size: 22px; }
+
+.subtitle-font-size {
+  font-size: 14px; }
+
+.content-font-size {
+  font-size: 14px; }
+
+.subcontent-font-size {
+  font-size: 12px; }
+
+.form-font-size {
+  font-size: 12px; }
+
+.fg-white {
+  color: #ffffff; }
+
+.fg-gray {
+  color: #282828; }
+
+.fg-light-gray {
+  color: #efefed; }
+
+.fg-blue {
+  color: #2f3e9f; }
+
+.fg-orange {
+  color: #ebaa56; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-gray {
+  background-color: #282828; }
+
+.bg-light-gray {
+  background-color: #efefed; }
+
+.bg-blue {
+  background-color: #2f3e9f; }
+
+.bg-orange {
+  background-color: #ebaa56; }
+
+.f-left {
+  float: left; }
+
+.ta-c {
+  text-align: center; }
+
+.tt-u {
+  text-transform: uppercase; }
+
+.td-n {
+  text-decoration: none; }
+
+.lst-none {
+  list-style: none; }
+
+/**
+ * Clearfix
+ */
+body {
+  background-color: black;
+  font-family: "Open Sans", sans-serif; }
+
+header {
+  background: url("../img/bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 550px;
+  padding: 40px; }
+
+.navbar-default {
+  background-color: #ffffff !important;
+  border-color: none !important; }
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  border-radius: 0px !important;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2); }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  color: #ebaa56;
+  border-bottom: 5px solid #ebaa56;
+  background-color: transparent; }
+
+.container-fluid {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto; }
+
+h1 {
+  margin: 100px; }
+
+.btn {
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 0px; }
+
+.btn-default {
+  color: white;
+  background-color: transparent;
+  border-color: white; }
+
+.btn-default:hover {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  text-decoration: underline; }
+
+section, footer {
+  padding: 70px 0px; }
+
+.container-section {
+  width: 70%;
+  margin: 0 auto; }
+
+.pilar-circle {
+  border: 1px solid #2f3e9f;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: auto; }
+  .pilar-circle .pilar-img {
+    padding: 20px 5px; }
+    .pilar-circle .pilar-img.helps {
+      padding: 15px; }
+
+.border-subtitle {
+  border-bottom: 2px solid #ebaa56;
+  width: 50%;
+  margin: 10px auto; }
+  .border-subtitle.pot {
+    width: 70%; }
