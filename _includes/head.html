@@ -7,6 +7,11 @@
 
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <!-- Useful for styles with static names... -->
+  <link href="{{ site.github.url }}/css/main.css" rel="stylesheet">
+  <!-- and for documents/pages whose URL's can change... -->
+  <a href="{{ page.url | prepend: site.github.url }}">{{ page.title }}</a>
+
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
