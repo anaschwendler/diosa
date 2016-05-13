@@ -94,3 +94,15 @@ section, footer {
         width: 70%;
     }
 }
+
+@include media-query($on-laptop) {
+    header {
+        padding: 0;
+    }
+    .navbar {
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+}

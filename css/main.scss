@@ -30,6 +30,16 @@ $base-blue: #2f3e9f;
 $base-orange: #ebaa56;
 
 
+$on-palm:          760px;
+$on-laptop:        940px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
