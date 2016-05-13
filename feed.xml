@@ -4,10 +4,10 @@
     <title>Diosa</title>
     <description>Uma plataforma de divulgação de mão de obra feminina na área de manutenção geral de residências.
 </description>
-    <link>http://diosa.me/diosa.github.io/</link>
-    <atom:link href="http://diosa.me/diosa.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 May 2016 19:27:31 -0300</pubDate>
-    <lastBuildDate>Fri, 13 May 2016 19:27:31 -0300</lastBuildDate>
+    <link>http://diosa.me/diosa/</link>
+    <atom:link href="http://diosa.me/diosa/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 13 May 2016 19:28:28 -0300</pubDate>
+    <lastBuildDate>Fri, 13 May 2016 19:28:28 -0300</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
   </channel>
