@@ -1,4 +1,65 @@
 body {
-    background-color: black;
-    font-family: $base-font-family;
+  background-color: black;
+  font-family: $base-font-family;
 }
+
+header {
+    background: url("../img/bg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 550px;
+    padding: 40px;
+}
+
+.navbar-default {
+    background-color: $base-white !important;
+    border-color: none !important;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    border-radius: 0px !important;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: $base-orange;
+    border-bottom: 5px solid $base-orange;
+    background-color: transparent;
+}
+
+.container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    margin: 100px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 0px;
+}
+
+.btn-default {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+
+.btn-default:hover {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    text-decoration: underline;
+}
+
