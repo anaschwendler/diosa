@@ -65,6 +65,9 @@
 .f-left {
   float: left; }
 
+.f-right {
+  float: right; }
+
 .ta-c {
   text-align: center; }
 
@@ -121,19 +124,38 @@ h1 {
 
 .btn {
   padding: 10px 15px;
-  border: 2px solid transparent;
-  border-radius: 0px; }
+  border: 2px solid transparent; }
 
-.btn-default {
-  color: white;
+.btn-default, .form-control {
+  border-radius: 0px;
+  color: #ffffff;
   background-color: transparent;
-  border-color: white; }
+  border-color: #ffffff;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+  transition: background-color .3s ease; }
 
 .btn-default:hover {
-  color: white;
-  background-color: transparent;
-  border-color: white;
-  text-decoration: underline; }
+  color: #2f3e9f;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+  transition: background-color .3s ease; }
+
+::-webkit-input-placeholder {
+  color: #ffffff; }
+
+:-moz-placeholder {
+  color: #ffffff; }
+
+::-moz-placeholder {
+  color: #ffffff; }
+
+:-ms-input-placeholder {
+  color: #ffffff; }
 
 section, footer {
   padding: 70px 0px; }
@@ -159,6 +181,10 @@ section, footer {
   margin: 10px auto; }
   .border-subtitle.pot {
     width: 70%; }
+
+footer h2 {
+  margin: 0;
+  padding: 0; }
 
 @media screen and (max-width: 940px) {
   header {
