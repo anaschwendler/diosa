@@ -27,12 +27,17 @@ header {
 }
 
 .navbar {
-    width: 80%;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 70%;
     margin: auto;
     border-radius: 0px !important;
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    z-index: 5;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -49,7 +54,7 @@ header {
 }
 
 h1 {
-    margin: 100px;
+    margin: 140px 100px;
 }
 
 .btn {
@@ -78,6 +83,18 @@ h1 {
     transition: background-color .3s ease;
 }
 
+.contact .btn-default {
+    color: $base-orange;
+    background-color: transparent;
+    border-color: $base-orange;
+}
+
+.contact .btn-default:hover {
+    color: $base-white;
+    background-color: $base-orange;
+    border-color: $base-orange;
+}
+
 .form-control:focus {
     border-color: $base-white;
 }
@@ -98,12 +115,67 @@ h1 {
     color: $base-white;
 }
 
-section, footer {
+.contact form {
+    margin-bottom: 40px;
+}
+
+.contact .form-control {
+    color: $base-gray;
+    background-color: $base-light-gray !important;
+    border: none;
+    box-shadow: none;
+}
+
+.contact input.form-control {
+    padding: 20px;
+}
+
+.contact .form-control:focus {
+    border-color: $base-light-gray;
+}
+
+.contact .form-group input::-webkit-input-placeholder {
+    color: $base-gray;
+}
+
+.contact .form-group input:-moz-placeholder {
+    color: $base-gray;
+}
+
+.contact .form-group input::-moz-placeholder {
+    color: $base-gray;
+}
+
+.contact .form-group input:-ms-input-placeholder {
+    color: $base-gray;
+}
+
+section {
+    padding: 90px 20px;
+}
+
+section.b-pad {
+    padding: 140px 0px 90px;
+}
+
+section h2 {
+    margin-bottom: 40px;
+}
+
+section .pilares {
+    margin-top: 40px;
+}
+
+section p {
+    margin-bottom: 40px;
+}
+
+footer {
     padding: 70px 0px;
 }
 
 .container-section {
-    width: 70%;
+    max-width: 750px;
     margin: 0 auto;
 }
 
@@ -132,9 +204,16 @@ section, footer {
 
 footer {
     h2  {
-        margin: 0;
+        margin: 10px 0;
         padding: 0;
     }
+}
+
+.social {
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    display: block;
 }
 
 @include media-query($on-laptop) {
@@ -143,8 +222,13 @@ footer {
     }
     .navbar {
         width: 100%;
+        position: initial;
     }
     footer {
         text-align: center;
+        .form-group {
+            width: 50%;
+            margin: 15px auto;
+        }
     }
 }

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="we-do bg-white ta-c">
+<section class="we-do b-pad bg-white ta-c">
     <div class="container-section">
         <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.we_do }}</h2>
         <p class="font-normal content-font-size fg-gray">{{ site.description_we_do }}</p>
@@ -54,8 +54,8 @@ layout: default
         <p class="font-normal content-font-size fg-white">Por isso, investimos na divulgação da mão de obra feminina em uma área pouco comum para elas, mas que existe uma grande demanda de clientes a ser atendida</p>
     </div>
 </section>
-
-<section class="partners bg-light-gray ta-c">
+<div class="border"></div>
+<section class="partners b-pad bg-light-gray ta-c">
     <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.partners }}</h2>
 </section>
 
@@ -71,8 +71,20 @@ layout: default
     <div class="container-section">
         <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.contact }}</h2>
         <p class="font-normal content-font-size fg-gray">{{ site.description_contact }}</p>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Mensagem"></textarea>
+            </div>
+        </form>
+        <button type="button" class="btn btn-default font-semibold main-button-font-size tt-u">
+            enviar
+        </button>
     </div>
 </section>
-
-<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 </div>
