@@ -71,18 +71,18 @@ layout: default
     <div class="container-section">
         <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.contact }}</h2>
         <p class="font-normal content-font-size fg-gray">{{ site.description_contact }}</p>
-        <form>
+        <form action="https://formspree.io/contato@ediosa.me" method="POST">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nome">
+                <input type="text" class="form-control" placeholder="Nome" name="name">
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="E-mail">
+                <input type="email" class="form-control" placeholder="E-mail" name="_replyto">
             </div>
             <div class="form-group">
-                <textarea class="form-control" rows="5" placeholder="Mensagem"></textarea>
+                <textarea class="form-control" rows="5" placeholder="Mensagem" name="message"></textarea>
             </div>
         </form>
-        <button type="button" class="btn btn-default font-semibold main-button-font-size tt-u">
+        <button type="submit" class="btn btn-default font-semibold main-button-font-size tt-u">
             enviar
         </button>
     </div>
