@@ -259,9 +259,15 @@ footer h2 {
   margin: auto;
   display: block; }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 980px) {
   header {
     padding: 0; }
+
+  h1 {
+    margin: 60px 40px; }
+
+  .border-subtitle {
+    max-width: 50%; }
 
   .navbar {
     width: 100%;
