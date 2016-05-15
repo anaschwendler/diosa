@@ -15,7 +15,7 @@ register_button: >
 we_do: >
   O que fazemos
 description_we_do: >
-  Nós divulgamos a mão de obra feminina ligada à manutenção geral de residências, possibilitando mais visibilidade para as mulheres que já trabalham na área e para aquelas que estão buscando inserção nesse mercado
+  Nós divulgamos a mão de obra feminina ligada à manutenção geral de residências, possibilitando mais visibilidade para as mulheres que já trabalham na área e para aquelas que estão buscando inserção nesse mercado.
 spread: >
   Mão de obra feminina relacionada à manutenção geral de residências.
 potencialize: >
@@ -36,7 +36,7 @@ be_partner: >
 contact: >
   Contato
 description_contact: >
-  Tem interesse em saber mais sobre a Diosa, contratar o serviço ou ser uma prestadora? Entra em contato com a gente. Ficaremos felizes com o seu contato
+  Tem interesse em saber mais sobre a Diosa, contratar o serviço ou ser uma prestadora? Entra em contato com a gente. Ficaremos felizes com o seu contato.
 baseurl: "/diosa" # the subpath of your site, e.g. /blog
 url: "http://diosa.me" # the base hostname & protocol for your site
 
