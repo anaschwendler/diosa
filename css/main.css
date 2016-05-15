@@ -108,12 +108,17 @@ header {
   border-color: none !important; }
 
 .navbar {
-  width: 80%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  width: 70%;
   margin: auto;
   border-radius: 0px !important;
   -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   color: #ebaa56;
@@ -127,7 +132,7 @@ header {
   margin-left: auto; }
 
 h1 {
-  margin: 100px; }
+  margin: 140px 100px; }
 
 .btn {
   padding: 10px 15px;
@@ -152,6 +157,16 @@ h1 {
   -o-transition: background-color .3s ease;
   transition: background-color .3s ease; }
 
+.contact .btn-default {
+  color: #ebaa56;
+  background-color: transparent;
+  border-color: #ebaa56; }
+
+.contact .btn-default:hover {
+  color: #ffffff;
+  background-color: #ebaa56;
+  border-color: #ebaa56; }
+
 .form-control:focus {
   border-color: #ffffff; }
 
@@ -167,11 +182,53 @@ h1 {
 .form-group input:-ms-input-placeholder {
   color: #ffffff; }
 
-section, footer {
+.contact form {
+  margin-bottom: 40px; }
+
+.contact .form-control {
+  color: #282828;
+  background-color: #efefed !important;
+  border: none;
+  box-shadow: none; }
+
+.contact input.form-control {
+  padding: 20px; }
+
+.contact .form-control:focus {
+  border-color: #efefed; }
+
+.contact .form-group input::-webkit-input-placeholder {
+  color: #282828; }
+
+.contact .form-group input:-moz-placeholder {
+  color: #282828; }
+
+.contact .form-group input::-moz-placeholder {
+  color: #282828; }
+
+.contact .form-group input:-ms-input-placeholder {
+  color: #282828; }
+
+section {
+  padding: 90px 20px; }
+
+section.b-pad {
+  padding: 140px 0px 90px; }
+
+section h2 {
+  margin-bottom: 40px; }
+
+section .pilares {
+  margin-top: 40px; }
+
+section p {
+  margin-bottom: 40px; }
+
+footer {
   padding: 70px 0px; }
 
 .container-section {
-  width: 70%;
+  max-width: 750px;
   margin: 0 auto; }
 
 .pilar-circle {
@@ -193,15 +250,25 @@ section, footer {
     width: 70%; }
 
 footer h2 {
-  margin: 0;
+  margin: 10px 0;
   padding: 0; }
+
+.social {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  display: block; }
 
 @media screen and (max-width: 940px) {
   header {
     padding: 0; }
 
   .navbar {
-    width: 100%; }
+    width: 100%;
+    position: initial; }
 
   footer {
-    text-align: center; } }
+    text-align: center; }
+    footer .form-group {
+      width: 50%;
+      margin: 15px auto; } }
