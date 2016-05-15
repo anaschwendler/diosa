@@ -269,6 +269,10 @@ footer h2 {
   .border-subtitle {
     max-width: 50%; }
 
+  .container-section {
+    width: 85%;
+    margin: 0 auto; }
+
   .navbar {
     width: 100%;
     position: initial; }
