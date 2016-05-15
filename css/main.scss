@@ -31,7 +31,7 @@ $base-orange: #ebaa56;
 
 
 $on-palm:          760px;
-$on-laptop:        940px;
+$on-laptop:        980px;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
