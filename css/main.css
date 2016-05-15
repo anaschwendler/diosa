@@ -88,13 +88,20 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 header {
-  background: url("../img/bg.png") no-repeat center center fixed;
+  background: url("../img/bg.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 550px;
+  height: 600px;
   padding: 40px; }
+
+.border {
+  background: url("../img/borda.png") no-repeat center center;
+  height: 200px;
+  position: relative;
+  top: -65px;
+  margin-bottom: -130px; }
 
 .navbar-default {
   background-color: #ffffff !important;
@@ -145,16 +152,19 @@ h1 {
   -o-transition: background-color .3s ease;
   transition: background-color .3s ease; }
 
-::-webkit-input-placeholder {
+.form-control:focus {
+  border-color: #ffffff; }
+
+.form-group input::-webkit-input-placeholder {
   color: #ffffff; }
 
-:-moz-placeholder {
+.form-group input:-moz-placeholder {
   color: #ffffff; }
 
-::-moz-placeholder {
+.form-group input::-moz-placeholder {
   color: #ffffff; }
 
-:-ms-input-placeholder {
+.form-group input:-ms-input-placeholder {
   color: #ffffff; }
 
 section, footer {
