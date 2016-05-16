@@ -259,6 +259,64 @@ footer h2 {
   margin: auto;
   display: block; }
 
+figure {
+  width: 150px;
+  height: 150px;
+  margin: 100px auto;
+  background: #fff;
+  overflow: hidden;
+  transform: rotate(45deg);
+  position: relative; }
+
+.partners .col-md-3 {
+  margin-right: -110px; }
+
+.partners .bottom-row {
+  position: relative;
+  top: -230px;
+  left: -110px; }
+
+.partners .contain-partner {
+  position: relative;
+  left: 10%;
+  top: -20px; }
+
+figure div {
+  display: block;
+  width: 280px;
+  height: 280px;
+  position: relative;
+  margin: -42px 0 0 -42px;
+  transform: rotate(-45deg); }
+
+figure div figcaption {
+  position: absolute;
+  width: 280px;
+  height: 170px;
+  background: rgba(47, 62, 159, 0.8);
+  z-index: 2;
+  bottom: -105px;
+  left: 0;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
+  color: #ffffff; }
+
+figcaption a {
+  color: #ffffff; }
+
+figcaption a:hover {
+  color: #ffffff;
+  text-decoration: underline; }
+
+figure:hover div figcaption {
+  bottom: 0; }
+
 @media screen and (max-width: 980px) {
   header {
     padding: 0; }
