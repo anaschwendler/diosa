@@ -148,7 +148,7 @@ h1 {
   -o-transition: background-color .3s ease;
   transition: background-color .3s ease; }
 
-.btn-default:hover {
+.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:visited {
   color: #2f3e9f;
   background-color: #ffffff;
   border-color: #ffffff;
@@ -316,6 +316,36 @@ figcaption a:hover {
 
 figure:hover div figcaption {
   bottom: 0; }
+
+.modal-content {
+  border-radius: 0px; }
+  .modal-content .close {
+    margin: 20px; }
+
+.modal-body {
+  width: 60%;
+  margin: 20px auto; }
+  .modal-body span {
+    color: #ebaa56; }
+
+.modal-content .form-control {
+  color: #ebaa56;
+  border-color: #ebaa56; }
+
+.modal-content .form-control:focus {
+  border-color: #ebaa56; }
+
+.modal-content .form-group input::-webkit-input-placeholder {
+  color: #ebaa56; }
+
+.modal-content .form-group input:-moz-placeholder {
+  color: #ebaa56; }
+
+.modal-content .form-group input::-moz-placeholder {
+  color: #ebaa56; }
+
+.modal-content .form-group input:-ms-input-placeholder {
+  color: #ebaa56; }
 
 @media screen and (max-width: 980px) {
   header {
