@@ -73,7 +73,7 @@ h1 {
     transition: background-color .3s ease;
 }
 
-.btn-default:hover {
+.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:visited {
     color: $base-blue;
     background-color: $base-white;
     border-color: $base-white;
@@ -297,6 +297,46 @@ figcaption a:hover {
 
 figure:hover div figcaption {
   bottom: 0;
+}
+
+.modal-content {
+    border-radius: 0px;
+    .close {
+        margin: 20px;
+    }
+}
+
+.modal-body {
+    width: 60%;
+    margin: 20px auto;
+    span {
+        color: $base-orange;
+    }
+}
+
+.modal-content .form-control {
+    color: $base-orange;
+    border-color: $base-orange;
+}
+
+.modal-content .form-control:focus {
+    border-color: $base-orange;
+}
+
+.modal-content .form-group input::-webkit-input-placeholder {
+    color: $base-orange;
+}
+
+.modal-content .form-group input:-moz-placeholder {
+    color: $base-orange;
+}
+
+.modal-content .form-group input::-moz-placeholder {
+    color: $base-orange;
+}
+
+.modal-content .form-group input:-ms-input-placeholder {
+    color: $base-orange;
 }
 
 @include media-query($on-laptop) {

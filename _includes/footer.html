@@ -24,21 +24,19 @@
     </div>
 </footer>
 <div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <button type="button" class="close fg-gray" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-body ta-c">
+                <h2 class="font-bold title-font-size fg-blue tt-u">Newsletter</h2>
+                    <p class="font-normal subtitle-font-size fg-gray">Cadastre-se para se manter informado.</p>
+                    <div class="form-group has-feedback">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                        <span class="glyphicon glyphicon glyphicon-arrow-right form-control-feedback" aria-hidden="true"></span>
+                    </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}""></script>
