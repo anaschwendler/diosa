@@ -19,3 +19,19 @@ function scrollNav() {
     $('.scrollTop a').scrollTop();
 }
 scrollNav();
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
+$("#contact-message").submit(function(e){
+    if(isEmail($("input[type='email']").val()) === false ) {
+        $("#miss-email").removeClass('hidden');
+        e.preventDefault();
+    }
+    else {
+        $("#miss-email").addClass('hidden');
+        alert("Email enviado, breve estaremos respondendo sua solicitação!");
+    }
+});
