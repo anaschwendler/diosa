@@ -57,7 +57,7 @@
   </h1>
 
   <div class="ta-c cadastro">
-    <button type="button" class="btn btn-default font-semibold main-button-font-size">
+    <button type="button" class="btn btn-default font-semibold main-button-font-size" data-toggle="modal" data-target="#newsletter">
       Cadastre-se para se manter informado
     </button>
   </div>
@@ -132,8 +132,8 @@
 </h2>
     <div class="contain-partner">
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-3">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
                 <figure>
                     <div>
                         <img src="/diosa/img/incubadora.png"/>
@@ -141,7 +141,7 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <figure>
                     <div>
                         <img src="/diosa/img/odomode.png"/>
@@ -149,7 +149,7 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <figure>
                     <div>
                         <img src="/diosa/img/sticc.png"/>
@@ -157,11 +157,11 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
         </div>
         <div class="row bottom-row">
-            <div class="col-md-2"></div>
-            <div class="col-md-3">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
                 <figure>
                     <div>
                         <img src="/diosa/img/afro-sul.png"/>
@@ -169,7 +169,7 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <figure>
                     <div>
                         <img src="/diosa/img/projecta.png"/>
@@ -177,7 +177,7 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <figure>
                     <div>
                         <img src="/diosa/img/pao-dos-pobres.png"/>
@@ -185,7 +185,7 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
         </div>
     </div>
 </section>
@@ -234,7 +234,7 @@
     </div>
 
     <footer class="bg-orange">
-    <div class="container-section">
+    <div class="container-footer">
         <div class="row">
             <div class="col-md-4">
                 <h2 class="font-bold form-font-size fg-white">Newsletter</h2>
@@ -249,7 +249,7 @@
                 <p class="font-normal form-font-size fg-white">Todos os direitos reservados.</p>
             </div>
             <div class="col-md-4">
-                <div class="social">
+                <div class="social f-right">
                     <a href="https://www.facebook.com/diosamjm/?fref=ts" target="_blank">
                         <img src="/diosa/img/fb.png" width="40" height="40" alt="" />
                     </a>
@@ -258,6 +258,23 @@
         </div>
     </div>
 </footer>
+<div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="/diosa/js/bootstrap.min.js""></script>
 <script src="/diosa/js/main.js""></script>

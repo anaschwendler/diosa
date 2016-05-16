@@ -213,7 +213,7 @@ section {
   padding: 90px 20px; }
 
 section.b-pad {
-  padding: 140px 0px 90px; }
+  padding: 140px 0px 0px; }
 
 section h2 {
   margin-bottom: 40px; }
@@ -232,6 +232,10 @@ footer .legal {
 
 .container-section {
   max-width: 750px;
+  margin: 0 auto; }
+
+.container-footer {
+  max-width: 950px;
   margin: 0 auto; }
 
 .pilar-circle {
@@ -261,7 +265,7 @@ footer span {
 .social {
   height: 40px;
   width: 40px;
-  margin: 30px auto;
+  margin: 30px 0px;
   display: block; }
 
 figure {
@@ -273,18 +277,9 @@ figure {
   transform: rotate(45deg);
   position: relative; }
 
-.partners .col-md-3 {
-  margin-right: -110px; }
-
 .partners .bottom-row {
   position: relative;
-  top: -230px;
-  left: -110px; }
-
-.partners .contain-partner {
-  position: relative;
-  left: 10%;
-  top: -20px; }
+  top: -110px; }
 
 figure div {
   display: block;
