@@ -155,7 +155,7 @@ section {
 }
 
 section.b-pad {
-    padding: 140px 0px 90px;
+    padding: 140px 0px 0px;
 }
 
 section h2 {
@@ -180,6 +180,11 @@ footer .legal {
 
 .container-section {
     max-width: 750px;
+    margin: 0 auto;
+}
+
+.container-footer {
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -219,7 +224,7 @@ footer {
 .social {
     height: 40px;
     width: 40px;
-    margin: 30px auto;
+    margin: 30px 0px;
     display: block;
 }
 
@@ -233,21 +238,26 @@ figure {
     position: relative;
 }
 
-.partners .col-md-3 {
-    margin-right: -110px;
-}
-
 .partners .bottom-row {
     position: relative;
-    top: -230px;
-    left: -110px;
+    top: -110px;
 }
 
-.partners .contain-partner {
-    position: relative;
-    left: 10%;
-    top: -20px;
-}
+// .partners .col-md-3 {
+//     margin-right: -110px;
+// }
+
+// .partners .bottom-row {
+//     position: relative;
+//     top: -230px;
+//     left: -110px;
+// }
+
+// .partners .contain-partner {
+//     position: relative;
+//     left: 10%;
+//     top: -20px;
+// }
 
 figure div {
     display: block;
