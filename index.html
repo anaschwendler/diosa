@@ -57,6 +57,64 @@ layout: default
 <div class="border"></div>
 <section id="partners" class="partners b-pad bg-light-gray ta-c">
     <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.partners }}</h2>
+    <div class="contain-partner">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <figure>
+                    <div>
+                        <img src="{{ site.baseurl }}/img/incubadora.png"/>
+                        <figcaption><a href="http://www2.espm.br/i-lab" target="_blank">i-Lab</a></figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <div>
+                        <img src="{{ site.baseurl }}/img/odomode.png"/>
+                        <figcaption><a href="https://odomode.org/" target="_blank">Odomodê</a></figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <div>
+                        <img src="{{ site.baseurl }}/img/sticc.png"/>
+                        <figcaption><a href="http://www.sticc.org.br/" target="_blank">STICC</a></figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row bottom-row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <figure>
+                    <div>
+                        <img src="{{ site.baseurl }}/img/afro-sul.png"/>
+                        <figcaption><a href="#" target="_blank">Afro-Sul</a></figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <div>
+                        <img src="{{ site.baseurl }}/img/projecta.png"/>
+                        <figcaption><a href="https://www.facebook.com/Projecta-Treinamentos-960912820597033/" target="_blank">Projecta</a></figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <div>
+                        <img src="{{ site.baseurl }}/img/pao-dos-pobres.png"/>
+                        <figcaption><a href="http://www.paodospobres.org.br/site/" target="_blank">Pão dos Pobres</a></figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
 </section>
 
 <section class="be-partner bg-blue ta-c">
@@ -86,7 +144,7 @@ layout: default
             <div class="form-group">
                 <textarea class="form-control" rows="5" placeholder="Mensagem" name="message"></textarea>
             </div>
-            <input type="hidden" name="_next" value="{{ "/" | prepend: site.baseurl }}" />
+            <input type="hidden" name="_next" value="{{ site.baseurl }}/" />
             <input type="text" name="_gotcha" style="display:none" />
             <button type="submit" class="btn btn-default font-semibold main-button-font-size tt-u">
                 enviar
