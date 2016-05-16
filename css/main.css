@@ -225,7 +225,10 @@ section p {
   margin-bottom: 40px; }
 
 footer {
-  padding: 70px 0px; }
+  padding: 30px 0px; }
+
+footer .legal {
+  margin-top: 30px; }
 
 .container-section {
   max-width: 750px;
@@ -252,11 +255,13 @@ footer {
 footer h2 {
   margin: 10px 0;
   padding: 0; }
+footer span {
+  color: #ffffff; }
 
 .social {
   height: 40px;
   width: 40px;
-  margin: auto;
+  margin: 30px auto;
   display: block; }
 
 figure {
