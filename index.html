@@ -147,16 +147,23 @@
 </h2>
         <p class="font-normal content-font-size fg-gray">Tem interesse em saber mais sobre a Diosa, contratar o serviço ou ser uma prestadora? Entra em contato com a gente. Ficaremos felizes com o seu contato.
 </p>
-        <form action="https://formspree.io/contato@diosa.me" method="POST">
+        <form id="contact-message" action="https://formspree.io/contato@diosa.me" method="POST">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Nome" name="name">
             </div>
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="E-mail" name="_replyto">
+            <div class="form-group has-error has-feedback">
+                <input id="email" aria-describedby="email" type="email" class="form-control" placeholder="E-mail" name="_replyto">
+                <div id="miss-email" class="hidden">
+                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    <span id="email" class="sr-only">(error)</span>
+                    <span class="form-font-size fg-orange">Por favor, insira um e-mail válido</span>
+                </div>
             </div>
             <div class="form-group">
                 <textarea class="form-control" rows="5" placeholder="Mensagem" name="message"></textarea>
             </div>
+            <input type="hidden" name="_next" value="/diosa/" />
+            <input type="text" name="_gotcha" style="display:none" />
             <button type="submit" class="btn btn-default font-semibold main-button-font-size tt-u">
                 enviar
             </button>
