@@ -4,7 +4,7 @@ layout: default
 
 <section id="we-do" class="we-do b-pad bg-white ta-c">
     <div class="container-section">
-        <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.we_do }}</h2>
+        <h2 class="font-bold title-font-size fg-blue tt-u"><!-- <span>&mdash;&mdash;&mdash;&mdash;</span> -->{{ site.we_do }}</h2>
         <p class="font-normal content-font-size fg-gray">{{ site.description_we_do }}</p>
         <div class="row pilares">
                 <div class="col-md-3 spread">
@@ -49,14 +49,14 @@ layout: default
 
 <section id="we-are" class="we-are bg-orange ta-c">
     <div class="container-section">
-        <h2 class="font-bold title-font-size fg-white tt-u">{{ site.we_are }}</h2>
+        <h2 class="font-bold title-font-size fg-white tt-u">{{ site.we_are }}</span></h2>
         <p class="font-normal content-font-size fg-white">A Diosa é formada por 4 mulheres que acreditam no <span class="font-bold">empreendedorismo social</span>, na necessidade de <span class="font-bold">discussão sobre estereótipos de gênero</span> e no <span class="font-bold">empoderamento feminino</span> para mudança social.</p>
         <p class="font-normal content-font-size fg-white">Por isso, investimos na divulgação da mão de obra feminina em uma área pouco comum para elas, mas que existe uma grande demanda de clientes a ser atendida.</p>
     </div>
 </section>
 <div class="border"></div>
 <section id="partners" class="partners b-pad bg-light-gray ta-c">
-    <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.partners }}</h2>
+    <h2 class="font-bold title-font-size fg-blue tt-u"> {{ site.partners }} </h2>
     <div class="contain-partner">
         <div class="row">
             <div class="col-md-3"></div>
@@ -87,7 +87,7 @@ layout: default
             <div class="col-md-3"></div>
         </div>
         <div class="row bottom-row">
-            <div class="col-md-3"></div>
+            <div class="col-md-2"></div>
             <div class="col-md-2">
                 <figure>
                     <div>
@@ -112,16 +112,21 @@ layout: default
                     </div>
                 </figure>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-4"></div>
         </div>
     </div>
 </section>
 
 <section class="be-partner bg-blue ta-c">
     <div class="ta-c">
-        <button type="button" class="btn btn-default font-semibold main-button-font-size">
-            {{ site.be_partner }}
-        </button>
+        <div class="pre-partner">
+            <button type="button" class="be-partner btn btn-default font-semibold main-button-font-size">
+                {{ site.be_partner }}
+            </button>
+            </div>
+        <div class="post-partner hidden">
+            <p class="font-normal content-font-size fg-white">Deseja ser nosso parceiro? Entre em contato conosco: <span class="font-bold">contato@diosa.me</span></p>
+        </div>
     </div>
 </section>
 
@@ -129,27 +134,32 @@ layout: default
     <div class="container-section">
         <h2 class="font-bold title-font-size fg-blue tt-u">{{ site.contact }}</h2>
         <p class="font-normal content-font-size fg-gray">{{ site.description_contact }}</p>
-        <form id="contact-message" action="https://formspree.io/contato@diosa.me" method="POST">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nome" name="name">
-            </div>
-            <div class="form-group has-error has-feedback">
-                <input id="email" aria-describedby="email" type="email" class="form-control" placeholder="E-mail" name="_replyto">
-                <div id="miss-email" class="hidden">
-                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-                    <span id="email" class="sr-only">(error)</span>
-                    <span class="form-font-size fg-orange">Por favor, insira um e-mail válido</span>
+        <div class="post-contact hidden">
+            <p class="font-normal content-font-size fg-gray">Mensagem enviada com sucesso, obrigado pelo seu contato!</p>
+        </div>
+        <div class="pre-contact">
+            <form id="contact-message" action="https://formspree.io/contato@diosa.me" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nome" name="name">
                 </div>
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" rows="5" placeholder="Mensagem" name="message"></textarea>
-            </div>
-            <input type="hidden" name="_next" value="{{ site.baseurl }}/" />
-            <input type="text" name="_gotcha" style="display:none" />
-            <button type="submit" class="btn btn-default font-semibold main-button-font-size tt-u">
-                enviar
-            </button>
-        </form>
+                <div class="form-group has-error has-feedback">
+                    <input id="email" aria-describedby="email" type="email" class="form-control" placeholder="E-mail" name="_replyto">
+                    <div id="miss-email" class="hidden">
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <span id="email" class="sr-only">(error)</span>
+                        <span class="form-font-size fg-orange">Por favor, insira um e-mail válido</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Mensagem" name="message"></textarea>
+                </div>
+                <input type="hidden" name="_next" value="{{ site.baseurl }}/" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <button type="submit" class="btn btn-default font-semibold main-button-font-size tt-u">
+                    enviar
+                </button>
+            </form>
+        </div>
     </div>
 </section>
 </div>

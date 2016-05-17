@@ -25,13 +25,67 @@ function isEmail(email) {
   return regex.test(email);
 }
 
+var $form = $('form');
+
 $("#contact-message").submit(function(e){
     if(isEmail($("input[type='email']").val()) === false ) {
         $("#miss-email").removeClass('hidden');
         e.preventDefault();
     }
     else {
-        $("#miss-email").addClass('hidden');
-        alert("Email enviado, breve estaremos respondendo sua solicitação!");
+        $.post($(this).attr('action'), $(this).serialize(), function(response){
+            $(".post-contact").removeClass('hidden');
+            $(".pre-contact").addClass('hidden');
+        },'json');
     }
+    return false;
+});
+
+$("#contact-message").submit(function(e){
+    if(isEmail($("input[type='email']").val()) === false ) {
+        $("#miss-email").removeClass('hidden');
+        e.preventDefault();
+    }
+    else {
+        $.post($(this).attr('action'), $(this).serialize(), function(response){
+            $(".post-contact").removeClass('hidden');
+            $(".pre-contact").addClass('hidden');
+        },'json');
+    }
+    return false;
+});
+
+$("#mc-embedded-subscribe-form1").submit(function(e){
+
+    if(isEmail($("input#mce-EMAIL1").val()) === false ) {
+        $("#miss-email-modal").removeClass('hidden');
+        e.preventDefault();
+    }
+    else {
+        $(".post-modal").removeClass('hidden');
+        $(".pre-modal").addClass('hidden');
+        $.post($(this).attr('action'), $(this).serialize(), function(response){
+        },'json');
+    }
+    return false;
+});
+
+$("#mc-embedded-subscribe-form").submit(function(e){
+
+    if(isEmail($("input#mce-EMAIL").val()) === false ) {
+        $("#miss-email-footer").removeClass('hidden');
+        e.preventDefault();
+    }
+    else {
+        $(".post-footer").removeClass('hidden');
+        $(".pre-footer").addClass('hidden');
+        $.post($(this).attr('action'), $(this).serialize(), function(response){
+        },'json');
+    }
+    return false;
+});
+
+$('.be-partner').click(function(){
+    $(".post-partner").removeClass('hidden');
+    $(".pre-partner").addClass('hidden');
 });

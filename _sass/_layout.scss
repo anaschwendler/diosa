@@ -221,6 +221,25 @@ footer {
     }
 }
 
+.form-control-feedback {
+    pointer-events: visible;
+}
+
+.form-control-feedback .e-submit,
+.form-control-feedback .f-submit
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+}
+
 .social {
     height: 40px;
     width: 40px;
@@ -236,28 +255,19 @@ figure {
     overflow: hidden;
     transform: rotate(45deg);
     position: relative;
+    z-index: 3;
 }
 
 .partners .bottom-row {
     position: relative;
-    top: -110px;
+    top: -230px;
 }
 
-// .partners .col-md-3 {
-//     margin-right: -110px;
-// }
+.contain-partner {
+    margin-bottom: -180px;
+    margin-top: -40px;
+}
 
-// .partners .bottom-row {
-//     position: relative;
-//     top: -230px;
-//     left: -110px;
-// }
-
-// .partners .contain-partner {
-//     position: relative;
-//     left: 10%;
-//     top: -20px;
-// }
 
 figure div {
     display: block;
@@ -360,10 +370,31 @@ figure:hover div figcaption {
         width: 100%;
         position: initial;
     }
+    .partners .bottom-row {
+        position: relative;
+        top: -120px;
+    }
     footer {
         text-align: center;
         .form-group {
             width: 50%;
+            margin: 15px auto;
+        }
+        .social {
+            float: none;
+            margin: auto;
+        }
+    }
+}
+
+@include media-query($on-phone) {
+    .modal-body {
+        width: 90%;
+    }
+    footer {
+        text-align: center;
+        .form-group {
+            width: 100%;
             margin: 15px auto;
         }
     }
