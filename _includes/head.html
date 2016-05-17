@@ -6,15 +6,6 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <!-- and for documents/pages whose URL's can change... -->
-  <a href="{{ page.url | prepend: site.github.url }}">{{ page.title }}</a>
-
-  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
   <meta property="og:locale" content="pt_BR">
 
   <meta property="og:url" content="http://diosa.me">
@@ -26,8 +17,16 @@
 
   <meta property="og:image" content="{{ site.baseurl }}/img/facebook-logo.png">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="480">
-  <meta property="og:image:height" content="480">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="600">
+
+  <!-- and for documents/pages whose URL's can change... -->
+  <a href="{{ page.url | prepend: site.github.url }}">{{ page.title }}</a>
+
+  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   <meta property="og:type" content="website">
 
