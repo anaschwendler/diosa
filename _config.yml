@@ -37,7 +37,7 @@ contact: >
   Contato
 description_contact: >
   Tem interesse em saber mais sobre a Diosa, contratar o serviço ou ser uma prestadora? Entra em contato com a gente. Ficaremos felizes com o seu contato.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://diosa.me" # the base hostname & protocol for your site
 
 # Build settings
