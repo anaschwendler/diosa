@@ -215,11 +215,17 @@ section {
 section.b-pad {
   padding: 140px 0px 0px; }
 
+section#contact {
+  padding: 90px 20px 10px; }
+
+section#we-do {
+  padding: 140px 0px 5px; }
+
 section h2 {
   margin-bottom: 40px; }
 
 section .pilares {
-  margin-top: 40px; }
+  margin: 60px 0px; }
 
 section p {
   margin-bottom: 40px; }
@@ -229,6 +235,8 @@ footer {
 
 footer .legal {
   margin-top: 30px; }
+  footer .legal p {
+    margin-bottom: 5px; }
 
 .container-section {
   max-width: 750px;
@@ -300,7 +308,11 @@ figure {
 
 .contain-partner {
   margin-bottom: -180px;
-  margin-top: -40px; }
+  margin-top: -40px;
+  margin-left: 100px; }
+
+span.br {
+  display: block; }
 
 figure div {
   display: block;
@@ -349,6 +361,9 @@ figure:hover div figcaption {
   .modal-body span {
     color: #ebaa56; }
 
+.be-partner a:hover {
+  color: #ffffff; }
+
 .modal-content .form-control {
   color: #ebaa56;
   border-color: #ebaa56; }
@@ -393,6 +408,12 @@ figure:hover div figcaption {
     position: relative;
     top: -120px; }
 
+  .contain-partner {
+    margin: 0 0 -120px; }
+
+  section .pilares {
+    margin: 60px 100px; }
+
   footer {
     text-align: center; }
     footer .form-group {
@@ -400,10 +421,13 @@ figure:hover div figcaption {
       margin: 15px auto; }
     footer .social {
       float: none;
-      margin: auto; } }
+      margin: 20px auto; } }
 @media screen and (max-width: 460px) {
   .modal-body {
     width: 90%; }
+
+  section .pilares {
+    margin: 60px 0px; }
 
   footer {
     text-align: center; }
