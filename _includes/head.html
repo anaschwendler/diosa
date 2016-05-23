@@ -22,14 +22,14 @@
 
   <meta property="fb:app_id" content="1020576391361271" />
 
-  <!-- and for documents/pages whose URL's can change... -->
-  <a href="{{ page.url | prepend: site.github.url }}">{{ page.title }}</a>
-
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   <meta property="og:type" content="website">
+
+  <!-- and for documents/pages whose URL's can change... -->
+  <a href="{{ page.url | prepend: site.github.url }}">{{ page.title }}</a>
 
 </head>

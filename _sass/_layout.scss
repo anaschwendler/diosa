@@ -1,6 +1,7 @@
 body {
   background-color: black;
   font-family: $base-font-family;
+  position: relative;
 }
 
 header {
@@ -24,6 +25,10 @@ header {
 .navbar-default {
     background-color: $base-white !important;
     border-color: none !important;
+}
+
+.row {
+    margin: 0;
 }
 
 .navbar {
