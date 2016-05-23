@@ -26,9 +26,6 @@
 
   <meta property="fb:app_id" content="1020576391361271" />
 
-  <!-- and for documents/pages whose URL's can change... -->
-  <a href="/"></a>
-
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://diosa.me/">
@@ -36,15 +33,17 @@
 
   <meta property="og:type" content="website">
 
+  <!-- and for documents/pages whose URL's can change... -->
+  <a href="/"></a>
+
 </head>
 
 
-  <body>
+  <body data-spy="scroll" data-target="#nav-diosa">
 
-    <header >
+    <header id="start">
   <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
+    <div id="nav-diosa" class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-diosa" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -57,17 +56,16 @@
         </a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="nav-diosa">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a class="font-bold menu-font-size fg-gray td-n tt-u" href="#">Início <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a class="font-bold menu-font-size fg-gray td-n tt-u" href="#start">Início <span class="sr-only">(current)</span></a></li>
           <li><a class="font-bold menu-font-size fg-gray td-n tt-u" href="#we-do">O que fazemos</a></li>
           <li><a class="font-bold menu-font-size fg-gray td-n tt-u" href="#we-are">Quem somos</a></li>
           <li><a class="font-bold menu-font-size fg-gray td-n tt-u" href="#partners">Parceiros</a></li>
           <li><a class="font-bold menu-font-size fg-gray td-n tt-u" href="#contact">Contato</a></li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      </div>
+    </div>
   </nav>
 
   <h1 class="font-normal h1-font-size fg-white ta-c">
@@ -85,9 +83,9 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <section id="we-do" class="we-do b-pad bg-white ta-c">
+         <section id="we-do" class="we-do b-pad bg-white ta-c">
     <div class="container-section">
-        <h2 class="font-bold title-font-size fg-blue tt-u"><!-- <span>&mdash;&mdash;&mdash;&mdash;</span> -->O que fazemos
+        <h2 class="font-bold title-font-size fg-blue tt-u">O que fazemos
 </h2>
         <p class="font-normal content-font-size fg-gray">Nós divulgamos a mão de obra feminina ligada à manutenção geral de residências, possibilitando mais visibilidade para as mulheres que já trabalham na área e para aquelas que estão buscando inserção nesse mercado.
 </p>
@@ -150,7 +148,7 @@
  </h2>
     <div class="contain-partner">
         <div class="row">
-            <div class="col-md-3"></div>
+            <div class="col-md-4"></div>
             <div class="col-md-2">
                 <figure>
                     <div>
@@ -167,18 +165,18 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-md-2">
+<!--             <div class="col-md-2">
                 <figure>
                     <div>
                         <img src="/img/sticc.png"/>
                         <figcaption><a href="http://www.sticc.org.br/" target="_blank">STICC</a></figcaption>
                     </div>
                 </figure>
-            </div>
-            <div class="col-md-3"></div>
+            </div> -->
+            <div class="col-md-4"></div>
         </div>
         <div class="row bottom-row">
-            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
             <div class="col-md-2">
                 <figure>
                     <div>
@@ -195,15 +193,15 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-md-2">
+<!--             <div class="col-md-2">
                 <figure>
                     <div>
                         <img src="/img/pao-dos-pobres.png"/>
                         <figcaption><a href="http://www.paodospobres.org.br/site/" target="_blank">Pão dos Pobres</a></figcaption>
                     </div>
                 </figure>
-            </div>
-            <div class="col-md-4"></div>
+            </div> -->
+            <div class="col-md-5"></div>
         </div>
     </div>
 </section>
@@ -256,7 +254,6 @@
     </div>
 </section>
 </div>
-
       </div>
     </div>
 
@@ -275,7 +272,6 @@
                             <div class="pre-footer">
                                 <div class="form-group has-feedback">
                                     <input value="" name="EMAIL" id="mce-EMAIL" type="email" class="email form-control" placeholder="E-mail" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ce7c12a51e79f2d8680086905_44a0f3bc4c" tabindex="-1" value=""></div>
                                     <span class="glyphicon glyphicon glyphicon-arrow-right form-control-feedback" aria-hidden="true"><input type="submit" class="f-submit" name="subscribe" id="mc-embedded-subscribe"></span>
                                     <div id="miss-email-footer" class="hidden">
@@ -318,7 +314,6 @@
                             <div class="pre-modal">
                                 <div class="form-group has-feedback">
                                     <input value="" name="EMAIL" id="mce-EMAIL1" type="email" class="email form-control" placeholder="E-mail" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ce7c12a51e79f2d8680086905_44a0f3bc4c" tabindex="-1" value=""></div>
                                     <span class="glyphicon glyphicon glyphicon-arrow-right form-control-feedback" aria-hidden="true"><input type="submit" class="e-submit" name="subscribe" id="mc-embedded-subscribe"></span>
                                     <div id="miss-email-modal" class="hidden">

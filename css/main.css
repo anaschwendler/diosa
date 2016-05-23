@@ -85,7 +85,8 @@
  */
 body {
   background-color: black;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  position: relative; }
 
 header {
   background: url("../img/bg.png") no-repeat center center;
@@ -106,6 +107,9 @@ header {
 .navbar-default {
   background-color: #ffffff !important;
   border-color: none !important; }
+
+.row {
+  margin: 0; }
 
 .navbar {
   position: fixed;
