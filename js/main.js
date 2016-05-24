@@ -3,6 +3,8 @@ $(".nav a").on("click", function(){
     $(this).parent().addClass("active");
 });
 
+$('body').scrollspy({target: ".navbar", offset: 50});
+
 function scrollNav() {
     $('.nav a').click(function(){
         //Toggle Class
